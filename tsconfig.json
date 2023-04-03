@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+      "jsx": "react",
+      "removeComments": true,
+      "sourceMap": true,
+      "baseUrl": ".",
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "noEmit": true,
+      "lib": ["DOM", "ESNext"],
+      //Assuming your components/utilities live in ./src
+      //Update this path as necessary
+      "paths": {
+        "@/*": ["./src/*"]
+      }
+    },
+    "include": ["src"],
+    "exclude": [
+      "node_modules",
+      "dist",
+      ".vscode",
+      ".husky",
+    ]
+  }
+  
+  
